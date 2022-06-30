@@ -58,7 +58,6 @@ function createpokemoncard(pokemon) {
         <h4 class='name'>${name}</h4>
         <span class="type">Type:${type}</span>
       </div>
-      ${name}
     `;
 
   card.innerHTML = pokeinnerhtml;
