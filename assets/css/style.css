@@ -100,18 +100,12 @@ li {
 /*for wrapper*/
 .wrapper {
   max-width: 1360px;
-  width: 86%; 
+  width: 91%; 
   margin: 0 auto;
 }
 /*=================================
   Header styling starts here
 =================================*/
-
-
-
-
-
-
 /*=================================
   Header styling ends here
 =================================*/  
@@ -119,6 +113,23 @@ li {
 /*=================================
   main styling starts here
 =================================*/
+.poke-container{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  justify-content: center;
+}
+.pokemon-block{
+  border-radius: 20px;
+  flex-basis: 15%;
+  padding: 10px 2%;
+  margin: 10px;
+}
+.img-container{
+  margin-top: 25px;
+  background-color: rgba(255, 255, 255, 0.6);
+  border-radius: 80px;
+}
 
 
 
