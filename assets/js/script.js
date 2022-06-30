@@ -22,8 +22,6 @@ const colors = {
 
 const main_types = Object.keys(colors)
 
-// fetchpokemon();
-
 function fetchpokemon(id) {
   fetch(`https://pokeapi.co/api/v2/pokemon/${id}/`)
     .then((res) => res.json())
@@ -31,11 +29,13 @@ function fetchpokemon(id) {
       createpokemoncard(data);
     });
 }
+
 function fetchpokemons() {
   for (let i = 1; i <= pokecount; i++) {
     fetchpokemon(i);
   }
 }
+
 fetchpokemons();
 
 function createpokemoncard(pokemon) {
@@ -63,25 +63,4 @@ function createpokemoncard(pokemon) {
 
   card.innerHTML = pokeinnerhtml;
   pokecontainer.appendChild(card);
-
-  // const spritecontainer = document.createElement('div');
-  // spritecontainer.classList.add('img-container');
-
-  // const sprite = document.createElement('img');
-  // sprite.src = pokemon.sprites.front_default
-
-  // spritecontainer.appendChild(sprite);
-
-  // const number = document.createElement('p');
-  // number.textContent = `#${pokemon.id.toString().padStart(3,0)}`;
-
-  // const name = document.createElement('p')
-  // name.classList.add('name');
-  // name.textContent = pokemon.name
-
-  // card.appendChild(spritecontainer);
-  // card.appendChild(number);
-  // card.appendChild(name);
-
-  // pokecontainer.appendChild(card);
 }
